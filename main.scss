@@ -14,11 +14,18 @@ $font-weights:(
     "bold":700
 );
 
-$mobile:800px;
+
 
 
 @function weight($weight-name){
     @return map-get($font-weights, $weight-name )
+}
+
+$mobile:800px;
+body{
+    background:$primary-color ;
+    color:$text-color;
+   
 }
 
 @mixin flexCenter($direction){
@@ -43,11 +50,7 @@ $mobile:800px;
     
 }
 
-body{
-    background:$primary-color ;
-    color:$text-color;
-   
-}
+
 
 .main{
  @include flexCenter(row);
