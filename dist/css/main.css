@@ -24,7 +24,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -34,6 +34,10 @@ body {
 
 .main .main__paragraph1:hover, .main .main__paragraph2:hover {
   color: yellow;
+}
+
+.main .main__paragraph2:hover {
+  color: white;
 }
 
 @media (max-width: 800px) {
