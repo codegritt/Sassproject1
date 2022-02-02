@@ -53,17 +53,23 @@ body{
 
 
 .main{
- @include flexCenter(column);
+ @include flexCenter(row);
     width:80%;
     margin: 0 auto;
 
-#{&}__paragraph{
+#{&}__paragraph1 {
     font-weight: weight(bold);
 
     &:hover{
         color: yellow;
     }
 }
+
+#{&}__paragraph2{
+@extend .main__paragraph1;
+}
+    
+
 
 @include mobile{
     flex-direction: column;
