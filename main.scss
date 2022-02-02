@@ -53,7 +53,7 @@ body{
 
 
 .main{
- @include flexCenter(row);
+ @include flexCenter(column);
     width:80%;
     margin: 0 auto;
 
